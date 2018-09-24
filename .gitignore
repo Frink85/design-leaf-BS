@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# Ignore les fichier de PHPSTORM
+.idea/
+
+# ignore le sass-cache
+.sass-cache/
+
+# Ignore les fichiers mac
+.DS_Store
