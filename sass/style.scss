@@ -1,0 +1,122 @@
+// Générique
+body {
+  font-family: "Arial";
+  font-size: 15px;
+  -webkit-print-color-adjust: exact;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wrapper {
+  page-break-after: always;
+  margin-bottom: 20px;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+// Titre de la feuille d'unité
+.header {
+
+  .header__title {
+    color: white;
+    background-color: black !important;
+  }
+
+  th {
+    padding: 10px;
+  }
+
+  th:not(:last-child) {
+    width: 10%;
+  }
+}
+
+// Nom de l'unité
+.name__head {
+  background-color: #d2d2d2;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+
+  :not(:first-child) {
+    text-align: center;
+  }
+
+  td {
+    width: 4%;
+  }
+
+  td:first-child {
+    padding: 5px 10px;
+    width:33%;
+  }
+}
+
+.name__content {
+
+  :not(:first-child) {
+    text-align: center;
+  }
+
+  td:first-child {
+    padding: 5px 10px;
+  }
+}
+
+// Weapon de l'unité
+
+.weapon__head {
+  background-color: gainsboro !important;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+
+  :not(:first-child):not(:last-child) {
+    text-align: center;
+  }
+
+  td:first-child {
+    padding: 5px 10px;
+  }
+}
+
+.weapon__content {
+
+  :not(:first-child):not(:last-child) {
+    text-align: center;
+  }
+
+  td:first-child {
+    padding: 6px 10px;
+  }
+}
+
+.weapon__content_grey {
+  background-color: #f0eeee !important;
+}
+
+// Contenu
+.content {
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  ul {
+    list-style: none;
+    padding: 0px 10px;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+// Footer
+.footer {
+
+  td:first-child {
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+}

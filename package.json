@@ -1,0 +1,31 @@
+{
+  "name": "mfqm",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html> \r <html> \r <head>\r     <meta name=\"viewport\" content=\"width=device-width\" /> \r \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r \t<title>WordPress &#8250; À lire</title>\r \t<link rel=\"stylesheet\" href=\"wp-admin/css/install.css?ver=20100228\" type=\"text/css\" />\r </head>\r <body>\r <h1 id=\"logo\">\r \t<a href=\"https://wordpress.org/\"><img alt=\"WordPress\" src=\"wp-admin/images/wordpress-logo.png\" /></a> \r \t<br />Version 4.2.2",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bless": "^3.0.1",
+    "gulp-compass": "^2.0.4",
+    "gulp-concat": "^2.5.2",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-if": "^1.2.5",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-order": "^1.1.1",
+    "gulp-param": "^0.6.3",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "lodash": "^3.8.0",
+    "yargs": "^3.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
