@@ -5,6 +5,10 @@ body {
   -webkit-print-color-adjust: exact;
 }
 
+.row {
+  page-break-after: always;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
