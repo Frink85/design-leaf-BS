@@ -1,0 +1,2295 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+      <title>Test de la fonction apply-templates</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></head>
+   <body>
+      <div class="container-fluid">
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/HQ.png" width="60" height="60" alt="HQ"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="7 "><span>7 </span></th>
+                        <th class="unit-title">Commissar Yarrick</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Commissar Yarrick</td>
+                     <td>6"</td>
+                     <td>2+</td>
+                     <td>2+</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>4</td>
+                     <td>3</td>
+                     <td>9</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Bale Eye</td>
+                     <td>6"</td>
+                     <td>Pistol 1</td>
+                     <td>3</td>
+                     <td>-2</td>
+                     <td>1</td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Bolt pistol</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Power Klaw</td>
+                     <td>-</td>
+                     <td>Melee</td>
+                     <td>x2</td>
+                     <td>-3</td>
+                     <td>D3</td>
+                     <td>When attacking with this weapon, you must subtract 1
+                                                                        from the hit roll.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Storm bolter</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 2</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aura of Discipline : </b>Any friendly ASTRA MILITARUM units within 6" of a
+                                                                              COMMISSAR can use his Leadership instead of their
+                                                                              own.
+                           </li>
+                           <li><b>Hero of Hades Hive : </b>You can re-roll hit rolls of 1 made for friendly
+                                                                              ASTRA MILITARUM units within 6" of Commissar
+                                                                              Yarrick. You may re-roll and failed hit rolls for
+                                                                              friendly ASTRA MILITARUM units within 6" of
+                                                                              Commissar Yarrick when attacking ORK units.
+                           </li>
+                           <li><b>Iron Will : </b>Roll a D6 each time Commissar Yarrick loses his
+                                                                              final wound; on a roll of 3+ that wound is not
+                                                                              lost.
+                           </li>
+                           <li><b>Power Field : </b>Commisar Yarrick has a 4+ invulnerable save.
+                           </li>
+                           <li><b>Summary Execution : </b>The first time an Astra Militarum unit fails a
+                                                                              Morale test during the Morale phase whilst it is
+                                                                              within 6" of any friendly Commissars, you can
+                                                                              execute a model. If you do, one model of your choice
+                                                                              in that unit is slain and the Morale test is re-
+                                                                              rolled (do not include this slain model when
+                                                                              re-rolling the Morale test).
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">HQ, Officio Prefectus, Astra Militarum,
+                                                                    Character, Commissar, Infantry, Imperium, Yarrik
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/HQ.png" width="60" height="60" alt="HQ"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="13 "><span>13 </span></th>
+                        <th class="unit-title">Knight Commander Pask</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Knight Commander Pask</td>
+                     <td>*</td>
+                     <td>6+</td>
+                     <td>*</td>
+                     <td>7</td>
+                     <td>8</td>
+                     <td>12</td>
+                     <td>*</td>
+                     <td>8</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Leman Russ</td>
+                     <td>*</td>
+                     <td>6+</td>
+                     <td>*</td>
+                     <td>7</td>
+                     <td>8</td>
+                     <td>12</td>
+                     <td>*</td>
+                     <td>7</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Remaining W</td>
+                     <td>Movement</td>
+                     <td>BS</td>
+                     <td>Attacks</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>7-12+</td>
+                     <td>10"</td>
+                     <td>2+</td>
+                     <td>3</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>4-6</td>
+                     <td>7"</td>
+                     <td>3+</td>
+                     <td>D3</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>1-3</td>
+                     <td>4"</td>
+                     <td>4+</td>
+                     <td>1</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Battle Cannon</td>
+                     <td>72"</td>
+                     <td>Heavy D6</td>
+                     <td>8</td>
+                     <td>-2</td>
+                     <td>D3</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Hunter-killer missile</td>
+                     <td>48"</td>
+                     <td>Heavy 1</td>
+                     <td>8</td>
+                     <td>-2</td>
+                     <td>D6</td>
+                     <td>A model can only fire each of its hunter killer
+                                                                        missiles once per battle.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Lascannon</td>
+                     <td>48"</td>
+                     <td>Heavy 1</td>
+                     <td>9</td>
+                     <td>-3</td>
+                     <td>D6</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma cannon, Standard</td>
+                     <td>36"</td>
+                     <td>Heavy D3</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma cannon, Supercharge</td>
+                     <td>36"</td>
+                     <td>Heavy D3</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain after all of
+                                                                        this weapon's shots have been resolved.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Storm bolter</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 2</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <div class="content">
+                  <ul>
+                     <li><b>Augur array : </b>Once per battle, in the Shooting phase, you can
+                                                                        re-roll a single failed hit roll for a vehicle with
+                                                                        an augur array.
+                     </li>
+                     <li><b>Dozer blade : </b>If a vehicle with a dozer blade charges in the
+                                                                        Charge phase, add 1 to all hit rolls made for it
+                                                                        until the end of the ensuing Fight phase.
+                     </li>
+                     <li><b>Emergency Plasma Vents : </b>If this model fires a supercharged plasma cannon,
+                                                                        and you roll one or more hit rolls of 1, it is not
+                                                                        automatically destroyed. Instead, for each hit roll
+                                                                        of 1, the bearer suffers 1 mortal wound after all of
+                                                                        this weapon's shots have been resolved.
+                     </li>
+                     <li><b>Explodes (6+/6"/D3) : </b>If this model is reduced to 0 wounds, roll a D6
+                                                                        before removing it from the battlefield and before
+                                                                        any embarked models disembark. On a 6 it explodes,
+                                                                        and each unit within 6" suffers D3 mortal
+                                                                        wounds.
+                     </li>
+                     <li><b>Grinding Advance : </b>If this model remains stationary or moves under half
+                                                                        speed in its Movement phase (i.e. it moves a
+                                                                        distance in inches less than half of its current
+                                                                        Move characteristic) it can shoot its turret weapon
+                                                                        twice in the following Shooting phase (the turret
+                                                                        weapon must target the same unit both times).
+                                                                        Furthermore, hit rolls for this model&#8217;s turret
+                                                                        weapon do not suffer the penalty for moving and
+                                                                        shooting a Heavy weapon. The following weapons are
+                                                                        turret weapons: battle cannon, Conqueror battle
+                                                                        cannon, Demolisher cannon, Eradicator nova cannon,
+                                                                        Executioner plasma cannon, Exterminator autocannon,
+                                                                        Punisher gatling cannon, Stygies Vanquisher battle
+                                                                        cannon, twin lascannon and Vanquisher battle
+                                                                        cannon.
+                     </li>
+                     <li><b>Knight Commander : </b>Knight Commander Pask may use the Tank Orders
+                                                                        ability twice in each of your turns. Resolve the
+                                                                        effects of the first order before issuing the
+                                                                        second.
+                     </li>
+                     <li><b>Smoke Launchers : </b>Once per game, instead of shooting any weapons in
+                                                                        the Shooting phase, the vehicle can use its Smoke
+                                                                        Launchers; until your next Shooting phase your
+                                                                        opponent must subtract 1 from all hit rolls for
+                                                                        ranged weapons that target this vehicle.
+                     </li>
+                     <li><b>Track guards : </b>A vehicle with track guards always counts as having
+                                                                        its starting number of Wounds when determining its
+                                                                        Move characteristic (i.e., its Move characteristic
+                                                                        does not decrease as it suffers wounds).
+                     </li>
+                     <li><b>Tank Orders (Pask) : </b>Knight Commander Pask can issue an order to a
+                                                                        friendly CADIAN LEMAN RUSS at the start of your
+                                                                        Shooting phase. To issue a Tank Order, pick a target
+                                                                        LEMAN RUSS within 6" of Knight Commander Pask and
+                                                                        choose which order you wish to issue from the Tank
+                                                                        Orders table. Each LEMAN RUSS can only be given a
+                                                                        single order each turn.
+                     </li>
+                  </ul>
+               </div>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Cadian, Astra Militarum, Character, HQ,
+                                                                    Imperium, Knight Commander Pask, Leman Russ, Tank
+                                                                    Commander, Vehicle
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/HQ.png" width="60" height="60" alt="HQ"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="4 "><span>4 </span></th>
+                        <th class="unit-title">Lord Commissar</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Lord Commissar</td>
+                     <td>6"</td>
+                     <td>2+</td>
+                     <td>2+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>3</td>
+                     <td>9</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma pistol, Standard</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma pistol, Supercharge</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain.</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Power sword</td>
+                     <td>Melee</td>
+                     <td>Melee</td>
+                     <td>User</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aura of Discipline : </b>Any friendly ASTRA MILITARUM units within 6" of a
+                                                                              COMMISSAR can use his Leadership instead of their
+                                                                              own.
+                           </li>
+                           <li><b>Refractor Field : </b>This model has a 5+ invulnerable save.
+                           </li>
+                           <li><b>Summary Execution : </b>The first time an Astra Militarum unit fails a
+                                                                              Morale test during the Morale phase whilst it is
+                                                                              within 6" of any friendly Commissars, you can
+                                                                              execute a model. If you do, one model of your choice
+                                                                              in that unit is slain and the Morale test is re-
+                                                                              rolled (do not include this slain model when
+                                                                              re-rolling the Morale test).
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">HQ, Officio Prefectus, Astra Militarum,
+                                                                    Character, Commissar, Imperium, Infantry, Lord
+                                                                    Commissar
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/HQ.png" width="60" height="60" alt="HQ"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="2 "><span>2 </span></th>
+                        <th class="unit-title">Primaris Psyker</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Primaris Psyker</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>3</td>
+                     <td>8</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Force Stave</td>
+                     <td>Melee</td>
+                     <td>Melee</td>
+                     <td>+2</td>
+                     <td>-1</td>
+                     <td>D3</td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Laspistol</td>
+                     <td>12</td>
+                     <td>Pistol 1</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <div class="content">
+                  <ul>
+                     <li><b>It's For Your Own Good : </b>If this model is slain as a result of Perils of the
+                                                                        Warp whilst within 6" of a friendly COMMISSAR they
+                                                                        are executed before anything untoward can happen --
+                                                                        the power they were attempting still fails, but
+                                                                        units within 6" of them do not suffer D3 mortal
+                                                                        wounds as normal.
+                     </li>
+                  </ul>
+               </div>
+               <table class="footer">
+                 <tr>
+                    <td colspan="1">PSYKER</td>
+                    <td colspan="8">Cast : <b>1</b> / Deny : <b>1</b> / Power Known : <b>Smite &amp; 2 Psykana</b></li></td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Astra Militarum, Astra Telepathica,
+                                                                    Character, HQ, Imperium, Infantry, Primaris Psyker,
+                                                                    Psyker, Scholastica Psykana
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/HQ.png" width="60" height="60" alt="HQ"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="3 "><span>3 </span></th>
+                        <th class="unit-title">Tempestor Prime</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Tempestor Prime</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>3</td>
+                     <td>8</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Frag grenade</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Krak grenade</td>
+                     <td>6"</td>
+                     <td>Grenade 1</td>
+                     <td>6</td>
+                     <td>-1</td>
+                     <td>D3</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma pistol, Standard</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma pistol, Supercharge</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain.</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aerial Drop : </b>During deployment, you can set up this model in a
+                                                                              high altitude transport, ready to deploy via
+                                                                              grav-chute, instead of placing it on the
+                                                                              battlefield. At the end of any of your movement
+                                                                              phases the model can make an aerial drop - set it up
+                                                                              anywhere on the battlefield that is more than 9"
+                                                                              away from any enemy models.
+                           </li>
+                           <li><b>Voice of Command : </b>This unit may issue one order per turn to the
+                                                                              soldiers under their command at the start of their
+                                                                              Shooting phase. Orders may only be issued to
+                                                                              INFANTRY units within 6" of this unit that have the
+                                                                              same &lt;REGIMENT&gt; keyword as this unit. To issue
+                                                                              an order, pick a target unit and choose which order
+                                                                              you wish to issue from the table below. A unit may
+                                                                              only be affected by one order per turn.
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Tempestus Scions, Astra Militarum, HQ,
+                                                                    Imperium, Infantry, Character, Officer, Tempestor Prime,
+                                                                    Militarum Tempestus
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Troops.png" width="60" height="60" alt="Troops"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="3 "><span>3 </span></th>
+                        <th class="unit-title">Infantry Squad</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Guardsman</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>4+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>1</td>
+                     <td>6</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Heavy Weapons Team</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>4+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>2</td>
+                     <td>2</td>
+                     <td>6</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Sergeant</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>4+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>7</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Frag grenade</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Lasgun</td>
+                     <td>24</td>
+                     <td>Rapid Fire 1</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Mortar</td>
+                     <td>48"</td>
+                     <td>Heavy D6</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>This weapon can target units that are not visible to
+                                                                        the firer.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma gun, Standard</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma gun, Supercharge</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain after all of
+                                                                        this weapon's shots have been resolved.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma pistol, Standard</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma pistol, Supercharge</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain.</td>
+                  </tr>
+               </table>
+               <div class="content"></div>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">(REGIMENT), Astra Militarum, Imperium,
+                                                                    Infantry, Infantry Squad, Troops
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Troops.png" width="60" height="60" alt="Troops"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="5 "><span>5 </span></th>
+                        <th class="unit-title">Militarum Tempestus Scions</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Tempestor</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>7</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Tempestus Scion</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>1</td>
+                     <td>6</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Frag grenade</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Hot-shot Lasgun</td>
+                     <td>18"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>3</td>
+                     <td>-2</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Krak grenade</td>
+                     <td>6"</td>
+                     <td>Grenade 1</td>
+                     <td>6</td>
+                     <td>-1</td>
+                     <td>D3</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma gun, Standard</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma gun, Supercharge</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain after all of
+                                                                        this weapon's shots have been resolved.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma pistol, Standard</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma pistol, Supercharge</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain.</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aerial Drop : </b>During deployment, you can set up this model in a
+                                                                              high altitude transport, ready to deploy via
+                                                                              grav-chute, instead of placing it on the
+                                                                              battlefield. At the end of any of your movement
+                                                                              phases the model can make an aerial drop - set it up
+                                                                              anywhere on the battlefield that is more than 9"
+                                                                              away from any enemy models.
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Astra Militarum, Tempestus Scions,
+                                                                    Troops, Astra Militarum, Imperium, Infantry, Tempestus
+                                                                    Scions, Militarum Tempestus
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="1 "><span>1 </span></th>
+                        <th class="unit-title">Astropath</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Astropath</td>
+                     <td>6"</td>
+                     <td>5+</td>
+                     <td>6+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>6</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Laspistol</td>
+                     <td>12</td>
+                     <td>Pistol 1</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <div class="content">
+                  <ul>
+                     <li><b>Astral Devination : </b>At the start of your Shooting phase, pick and enemy
+                                                                        unit within 18" of this model. For the duration of
+                                                                        the phase, the unit you picked gains no bonus to
+                                                                        ther saving throws for being in cover when it is
+                                                                        targeted by attacks made by friendly ASTRA MILITARUM
+                                                                        units within 6" of this model.
+                     </li>
+                     <li><b>Telepathic Assault : </b>Each time you take a Psychic test for this unit when
+                                                                        it attempts to manifest Smite, roll 1D6 instead of
+                                                                        2D6.
+                     </li>
+                     <li><b>Psycher : </b> Cast / <b>1</b> Deny /
+                        <b>1</b> Power Known / <b>Smite &amp; 1 Psykana</b></li>
+                  </ul>
+               </div>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Astra Militarum, Astra Telepathica,
+                                                                    Astropath, Character, Elites, Imperium, Infantry,
+                                                                    Psyker, Scholastica Psykana
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="7 "><span>7 </span></th>
+                        <th class="unit-title">Bullgryns</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Bullgryn</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>4+</td>
+                     <td>5</td>
+                     <td>5</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>7</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Bullgryn Bone 'ead</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>4+</td>
+                     <td>5</td>
+                     <td>5</td>
+                     <td>3</td>
+                     <td>4</td>
+                     <td>8</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Bullgryn Maul</td>
+                     <td>Melee</td>
+                     <td>Melee</td>
+                     <td>+2</td>
+                     <td>-1</td>
+                     <td>2</td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Frag Bombs</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Grenadier Gauntlet</td>
+                     <td>12"</td>
+                     <td>Assault D6</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td></td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Brute Shield : </b>4+ Invulnerable Save
+                           </li>
+                           <li><b>Slabshield : </b>Add 2 to the save rolls of any models equipped with
+                                                                              a slabshield.
+                           </li>
+                           <li>
+                              <p>
+                                                     <span class="bold">Avalanche of Muscle:</span> youcan add 1 to the Attacks
+                                                     characteristic of thie model in the Fight phase on any turn in which it made a
+                                                     successful charge. This ability may only be used the first time this model
+                                                     fights each turn. (Codex: Astra Militarum p102)
+                              </p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Militarum Auxilla, Astra Militarum,
+                                                                    Elites, Astra Militarum, Militarum Auxilla, Imperium,
+                                                                    Infantry, Ogryn, Bullgryns
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="2 "><span>2 </span></th>
+                        <th class="unit-title">Commissar</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Commissar</td>
+                     <td>6"</td>
+                     <td>3+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>8</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma pistol, Standard</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma pistol, Supercharge</td>
+                     <td>12"</td>
+                     <td>Pistol 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain.</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aura of Discipline : </b>Any friendly ASTRA MILITARUM units within 6" of a
+                                                                              COMMISSAR can use his Leadership instead of their
+                                                                              own.
+                           </li>
+                           <li><b>Summary Execution : </b>The first time an Astra Militarum unit fails a
+                                                                              Morale test during the Morale phase whilst it is
+                                                                              within 6" of any friendly Commissars, you can
+                                                                              execute a model. If you do, one model of your choice
+                                                                              in that unit is slain and the Morale test is re-
+                                                                              rolled (do not include this slain model when
+                                                                              re-rolling the Morale test).
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Elites, Astra Militarum, Officio
+                                                                    Prefectus, Character, Commissar, Imperium,
+                                                                    Infantry
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="3 "><span>3 </span></th>
+                        <th class="unit-title">Militarum Tempestus Command Squad</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Tempestus Scion</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>3+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>1</td>
+                     <td>1</td>
+                     <td>6</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Frag grenade</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Krak grenade</td>
+                     <td>6"</td>
+                     <td>Grenade 1</td>
+                     <td>6</td>
+                     <td>-1</td>
+                     <td>D3</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Plasma gun, Standard</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>7</td>
+                     <td>-3</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Plasma gun, Supercharge</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 1</td>
+                     <td>8</td>
+                     <td>-3</td>
+                     <td>2</td>
+                     <td>On a hit roll of 1, the bearer is slain after all of
+                                                                        this weapon's shots have been resolved.
+                     </td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Aerial Drop : </b>During deployment, you can set up this model in a
+                                                                              high altitude transport, ready to deploy via
+                                                                              grav-chute, instead of placing it on the
+                                                                              battlefield. At the end of any of your movement
+                                                                              phases the model can make an aerial drop - set it up
+                                                                              anywhere on the battlefield that is more than 9"
+                                                                              away from any enemy models.
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Tempestus Scions, Astra Militarum,
+                                                                    Elites, Imperium, Infantry, Tempestus Scions, Tempestus
+                                                                    Command Squad, Militarum Tempestus
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="2 "><span>2 </span></th>
+                        <th class="unit-title">Ratlings</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Ratling</td>
+                     <td>5"</td>
+                     <td>5+</td>
+                     <td>3+</td>
+                     <td>2</td>
+                     <td>2</td>
+                     <td>1</td>
+                     <td>1</td>
+                     <td>5</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Sniper rifle</td>
+                     <td>36"</td>
+                     <td>Heavy 1</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>This weapon may target a CHARACTER even if it is not
+                                                                        the closest enemy unit. If you roll a wound roll of
+                                                                        6+ for this weapon, it inflicts a mortal wound in
+                                                                        addition to its normal damage.
+                     </td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Find the Best Spot : </b>Instead of deploying normally, this unit may wait
+                                                                              until both armies are fully deployed and then be
+                                                                              placed anywhere on the board that is more than 18"
+                                                                              from any enemy models.
+                           </li>
+                           <li><b>Naturally Stealthy : </b>Models in this unit receive a 2+ bonus to their
+                                                                              saving throw when they receive the benefits of cover
+                                                                              instead of only +1.
+                           </li>
+                           <li><b>Shoot Sharp and Scarper : </b>Immediately after making a shooting attack (other
+                                                                              than firing Overwatch), this unit can move as if it
+                                                                              were the Movement phase (though it cannot Advance as
+                                                                              part of this move).
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Elites, Astra Militarum, Militarum
+                                                                    Auxilla, Elites, Astra Militarum, Imperium, Infantry,
+                                                                    Militarum Auxilla, Ratlings
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Elites.png" width="60" height="60" alt="Elites"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="2 "><span>2 </span></th>
+                        <th class="unit-title">Tech-Priest Enginseer</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Tech-Priest Enginseer</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>4+</td>
+                     <td>4</td>
+                     <td>4</td>
+                     <td>4</td>
+                     <td>2</td>
+                     <td>8</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Laspistol</td>
+                     <td>12</td>
+                     <td>Pistol 1</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Omnissan Axe</td>
+                     <td>Melee</td>
+                     <td>Melee</td>
+                     <td>+1</td>
+                     <td>-2</td>
+                     <td>2</td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Servo-arm</td>
+                     <td>Melee</td>
+                     <td>Melee</td>
+                     <td>X2</td>
+                     <td>-2</td>
+                     <td>3</td>
+                     <td>Each servo-arm can only be used to make one attack
+                                                                        each time this model fights. When a model attacks
+                                                                        with this weapon, you must subtract 1 from the hit
+                                                                        roll.
+                     </td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Bionics : </b>This model has a 6+ invulnerable save.
+                           </li>
+                           <li><b>Master of Machines : </b>At the end of your Movement phase this model can
+                                                                              repair a single friendly &lt;FORGEWORLD&gt;,
+                                                                              ASTRAMILITARUM VEHICLE or QUESTOR MECHANICUS model
+                                                                              within 3". If the model being repaired is a
+                                                                              &lt;FORGEWORLD&gt; or ASTRA MILITARUM model, it
+                                                                              regains D3 lost wounds; if it is a QUESTOR
+                                                                              MECHANICUS model, it regains 1 lost wound. A model
+                                                                              may not be the target of the Master of Machines
+                                                                              ability more than once per turn.
+                           </li>
+                           <li>
+                              <p>
+                                                     <span class="bold">Designer's Note (forgeworld):</span> When selecting this unit
+                                                     for your army, choose which forgeworld it will be from. This replaces the
+                                                     &lt;FORGEWORLD&gt; keyword in all instances on this datasheet. (Codex: Astra
+                                                     Militarum p100)
+                              </p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">(FORGEWORLD), Astra Militarum, Character,
+                                                                    Cult Mechanicus, Enginseer, Elites, Imperium, Infantry,
+                                                                    Tech-Priest
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Heavy-Support.png" width="60" height="60" alt="Heavy Support"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="3 "><span>3 </span></th>
+                        <th class="unit-title">Heavy Weapons Squad</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Heavy Weapons Team</td>
+                     <td>6"</td>
+                     <td>4+</td>
+                     <td>4+</td>
+                     <td>3</td>
+                     <td>3</td>
+                     <td>2</td>
+                     <td>2</td>
+                     <td>6</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Autocannon</td>
+                     <td>48"</td>
+                     <td>Heavy 2</td>
+                     <td>7</td>
+                     <td>-1</td>
+                     <td>2</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Frag grenade</td>
+                     <td>6"</td>
+                     <td>Grenade D6</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Lascannon</td>
+                     <td>48"</td>
+                     <td>Heavy 1</td>
+                     <td>9</td>
+                     <td>-3</td>
+                     <td>D6</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Lasgun</td>
+                     <td>24</td>
+                     <td>Rapid Fire 1</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Mortar</td>
+                     <td>48"</td>
+                     <td>Heavy D6</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>This weapon can target units that are not visible to
+                                                                        the firer.
+                     </td>
+                  </tr>
+               </table>
+               <div class="content"></div>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">(REGIMENT), Astra Militarum, Imperium,
+                                                                    Infantry, Heavy Support, Heavy Weapons Squad
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Heavy-Support.png" width="60" height="60" alt="Heavy Support"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="20 "><span>20 </span></th>
+                        <th class="unit-title">Leman Russ Battle Tanks</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Leman Russ</td>
+                     <td>*</td>
+                     <td>6+</td>
+                     <td>*</td>
+                     <td>7</td>
+                     <td>8</td>
+                     <td>12</td>
+                     <td>*</td>
+                     <td>7</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Remaining W</td>
+                     <td>Movement</td>
+                     <td>BS</td>
+                     <td>Attacks</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>7-12+</td>
+                     <td>10"</td>
+                     <td>4+</td>
+                     <td>3</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>4-6</td>
+                     <td>7"</td>
+                     <td>5+</td>
+                     <td>D3</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>1-3</td>
+                     <td>4"</td>
+                     <td>6+</td>
+                     <td>1</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Battle Cannon</td>
+                     <td>72"</td>
+                     <td>Heavy D6</td>
+                     <td>8</td>
+                     <td>-2</td>
+                     <td>D3</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Heavy bolter</td>
+                     <td>36"</td>
+                     <td>Heavy 3</td>
+                     <td>5</td>
+                     <td>-1</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Heavy stubber</td>
+                     <td>36"</td>
+                     <td>Heavy 3</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Hunter-killer missile</td>
+                     <td>48"</td>
+                     <td>Heavy 1</td>
+                     <td>8</td>
+                     <td>-2</td>
+                     <td>D6</td>
+                     <td>A model can only fire each of its hunter killer
+                                                                        missiles once per battle.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Punisher Gatling Cannon</td>
+                     <td>24"</td>
+                     <td>Heavy 20</td>
+                     <td>5</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Storm bolter</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 2</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Augur array : </b>Once per battle, in the Shooting phase, you can
+                                                                              re-roll a single failed hit roll for a vehicle with
+                                                                              an augur array.
+                           </li>
+                           <li><b>Dozer blade : </b>If a vehicle with a dozer blade charges in the
+                                                                              Charge phase, add 1 to all hit rolls made for it
+                                                                              until the end of the ensuing Fight phase.
+                           </li>
+                           <li><b>Emergency Plasma Vents : </b>If this model fires a supercharged plasma cannon,
+                                                                              and you roll one or more hit rolls of 1, it is not
+                                                                              automatically destroyed. Instead, for each hit roll
+                                                                              of 1, the bearer suffers 1 mortal wound after all of
+                                                                              this weapon's shots have been resolved.
+                           </li>
+                           <li><b>Explodes (6+/6"/D3) : </b>If this model is reduced to 0 wounds, roll a D6
+                                                                              before removing it from the battlefield and before
+                                                                              any embarked models disembark. On a 6 it explodes,
+                                                                              and each unit within 6" suffers D3 mortal
+                                                                              wounds.
+                           </li>
+                           <li><b>Grinding Advance : </b>If this model remains stationary or moves under half
+                                                                              speed in its Movement phase (i.e. it moves a
+                                                                              distance in inches less than half of its current
+                                                                              Move characteristic) it can shoot its turret weapon
+                                                                              twice in the following Shooting phase (the turret
+                                                                              weapon must target the same unit both times).
+                                                                              Furthermore, hit rolls for this model&#8217;s turret
+                                                                              weapon do not suffer the penalty for moving and
+                                                                              shooting a Heavy weapon. The following weapons are
+                                                                              turret weapons: battle cannon, Conqueror battle
+                                                                              cannon, Demolisher cannon, Eradicator nova cannon,
+                                                                              Executioner plasma cannon, Exterminator autocannon,
+                                                                              Punisher gatling cannon, Stygies Vanquisher battle
+                                                                              cannon, twin lascannon and Vanquisher battle
+                                                                              cannon.
+                           </li>
+                           <li><b>Smoke Launchers : </b>Once per game, instead of shooting any weapons in
+                                                                              the Shooting phase, the vehicle can use its Smoke
+                                                                              Launchers; until your next Shooting phase your
+                                                                              opponent must subtract 1 from all hit rolls for
+                                                                              ranged weapons that target this vehicle.
+                           </li>
+                           <li><b>Track guards : </b>A vehicle with track guards always counts as having
+                                                                              its starting number of Wounds when determining its
+                                                                              Move characteristic (i.e., its Move characteristic
+                                                                              does not decrease as it suffers wounds).
+                           </li>
+                           <li><b>Vehicle Squadron : </b>The first time this unit is set up, all models in
+                                                                              this unit must be placed within 6" of each other.
+                                                                              From that point onwards, each operates independently
+                                                                              and is treated as a separate unit for all rules
+                                                                              purposes.
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">(REGIMENT), Astra Militarum, Heavy
+                                                                    Support, Imperium, Leman Russ, Leman Russ Battle Tank,
+                                                                    Vehicle
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Heavy-Support.png" width="60" height="60" alt="Heavy Support"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="6 "><span>6 </span></th>
+                        <th class="unit-title">Wyverns</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Wyvern</td>
+                     <td>*</td>
+                     <td>6+</td>
+                     <td>*</td>
+                     <td>6</td>
+                     <td>6</td>
+                     <td>11</td>
+                     <td>*</td>
+                     <td>7</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Remaining W</td>
+                     <td>Movement</td>
+                     <td>BS</td>
+                     <td>Attacks</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>6-11+</td>
+                     <td>12"</td>
+                     <td>4+</td>
+                     <td>3</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>3-5</td>
+                     <td>8"</td>
+                     <td>5+</td>
+                     <td>D3</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>1-2</td>
+                     <td>4"</td>
+                     <td>6+</td>
+                     <td>1</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Heavy bolter</td>
+                     <td>36"</td>
+                     <td>Heavy 3</td>
+                     <td>5</td>
+                     <td>-1</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Heavy stubber</td>
+                     <td>36"</td>
+                     <td>Heavy 3</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Wyvern Quad Stormshard
+                                                                        Mortar
+                     </td>
+                     <td>48"</td>
+                     <td>Heavy 4D6</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>This weapon can target units not visible to the
+                                                                        bearer. You can re-roll failed wound rolls for this
+                                                                        weapon.
+                     </td>
+                  </tr>
+               </table>
+               <table class="content">
+                  <tr>
+                     <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                     <td>
+                        <ul>
+                           <li><b>Explodes (6+/6"/D3) : </b>If this model is reduced to 0 wounds, roll a D6
+                                                                              before removing it from the battlefield and before
+                                                                              any embarked models disembark. On a 6 it explodes,
+                                                                              and each unit within 6" suffers D3 mortal
+                                                                              wounds.
+                           </li>
+                           <li><b>Smoke Launchers : </b>Once per game, instead of shooting any weapons in
+                                                                              the Shooting phase, the vehicle can use its Smoke
+                                                                              Launchers; until your next Shooting phase your
+                                                                              opponent must subtract 1 from all hit rolls for
+                                                                              ranged weapons that target this vehicle.
+                           </li>
+                           <li><b>Vehicle Squadron : </b>The first time this unit is set up, all models in
+                                                                              this unit must be placed within 6" of each other.
+                                                                              From that point onwards, each operates independently
+                                                                              and is treated as a separate unit for all rules
+                                                                              purposes.
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">Heavy Support, (REGIMENT), Astra
+                                                                    Militarum, Imperium, Vehicle, Wyvern
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="col-6">
+            <div class="wrapper">
+               <table class="header">
+                  <thead class="header__title">
+                     <tr>
+                        <th class="icon-role"><img src="img/Dedicated-Transport.png" width="60" height="60" alt="Dedicated Transport"></th>
+                        <th class="icon-power"><img src="img/power.png" width="60" height="60" alt="6 "><span>6 </span></th>
+                        <th class="unit-title">Chimera</th>
+                     </tr>
+                  </thead>
+               </table>
+               <table class="name">
+                  <tr class="name__head">
+                     <td>Unit</td>
+                     <td>M</td>
+                     <td>WS</td>
+                     <td>BS</td>
+                     <td>S</td>
+                     <td>T</td>
+                     <td>W</td>
+                     <td>A</td>
+                     <td>Ld</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Chimera</td>
+                     <td>*</td>
+                     <td>6+</td>
+                     <td>*</td>
+                     <td>6</td>
+                     <td>7</td>
+                     <td>10</td>
+                     <td>*</td>
+                     <td>7</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Remaining W</td>
+                     <td>Movement</td>
+                     <td>BS</td>
+                     <td>Attacks</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>6-10+</td>
+                     <td>12"</td>
+                     <td>4+</td>
+                     <td>3</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>3-5</td>
+                     <td>8"</td>
+                     <td>5+</td>
+                     <td>D3</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>1-2</td>
+                     <td>4"</td>
+                     <td>6+</td>
+                     <td>1</td>
+                  </tr>
+               </table>
+               <table class="weapon">
+                  <tr class="weapon__head">
+                     <td>Weapon</td>
+                     <td>Range</td>
+                     <td>Type</td>
+                     <td>S</td>
+                     <td>AP</td>
+                     <td>D</td>
+                     <td>Abilities</td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Heavy flamer</td>
+                     <td>8"</td>
+                     <td>Heavy D6</td>
+                     <td>5</td>
+                     <td>-1</td>
+                     <td>1</td>
+                     <td>This weapon automatically hits its target</td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Hunter-killer missile</td>
+                     <td>48"</td>
+                     <td>Heavy 1</td>
+                     <td>8</td>
+                     <td>-2</td>
+                     <td>D6</td>
+                     <td>A model can only fire each of its hunter killer
+                                                                        missiles once per battle.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content">
+                     <td>Lasgun Array</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 3</td>
+                     <td>3</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>This weapon can only be fired if a unit is embarked
+                                                                        upon the vehicle equipped with it.
+                     </td>
+                  </tr>
+                  <tr class="weapon__content weapon__content_grey">
+                     <td>Storm bolter</td>
+                     <td>24"</td>
+                     <td>Rapid Fire 2</td>
+                     <td>4</td>
+                     <td>0</td>
+                     <td>1</td>
+                     <td>-</td>
+                  </tr>
+               </table>
+               <div class="content">
+                  <ul>
+                     <li><b>Augur array : </b>Once per battle, in the Shooting phase, you can
+                                                                        re-roll a single failed hit roll for a vehicle with
+                                                                        an augur array.
+                     </li>
+                     <li><b>Dozer blade : </b>If a vehicle with a dozer blade charges in the
+                                                                        Charge phase, add 1 to all hit rolls made for it
+                                                                        until the end of the ensuing Fight phase.
+                     </li>
+                     <li><b>Explodes (6+/6"/D3) : </b>If this model is reduced to 0 wounds, roll a D6
+                                                                        before removing it from the battlefield and before
+                                                                        any embarked models disembark. On a 6 it explodes,
+                                                                        and each unit within 6" suffers D3 mortal
+                                                                        wounds.
+                     </li>
+                     <li><b>Smoke Launchers : </b>Once per game, instead of shooting any weapons in
+                                                                        the Shooting phase, the vehicle can use its Smoke
+                                                                        Launchers; until your next Shooting phase your
+                                                                        opponent must subtract 1 from all hit rolls for
+                                                                        ranged weapons that target this vehicle.
+                     </li>
+                     <li><b>Track guards : </b>A vehicle with track guards always counts as having
+                                                                        its starting number of Wounds when determining its
+                                                                        Move characteristic (i.e., its Move characteristic
+                                                                        does not decrease as it suffers wounds).
+                     </li>
+                     <li><b>Transport: Chimera : </b>This model can transport 12 ASTRA MILITARUM INFANTRY
+                                                                        models. Each Heavy Weapons Team or Veteran Heavy
+                                                                        Weapons Team takes the place of two other models and
+                                                                        each OGRYN takes the space of three other
+                                                                        models.
+                     </li>
+                  </ul>
+               </div>
+               <table class="footer">
+                  <tr>
+                     <td colspan="1">KEYWORDS</td>
+                     <td colspan="8">(REGIMENT), Astra Militarum, Imperium,
+                                                                    Transport, Vehicle, Dedicated Transport, Chimera
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
