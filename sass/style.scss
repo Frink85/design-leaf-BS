@@ -1,7 +1,34 @@
+// Color
+$thgrey: #C2C3BD;
+$linegrey: #E6E8E5;
+$contentgrey: #EEEEEC;
+
+// Font
+$titleFonts: 'caslon_antiqueregular';
+$contentFonts: 'albertina_mt_stdregular';
+
+@font-face {
+  font-family: 'albertina_mt_stdregular';
+  src: url('fonts/albertinamtstd-regular-webfont.woff2') format('woff2'),
+  url('fonts/albertinamtstd-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'caslon_antiqueregular';
+  src: url('fonts/caslonantique-webfont.woff2') format('woff2'),
+  url('fonts/caslonantique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 // Générique
 body {
-  font-family: "Arial" !important;
-  font-size: 12px !important;
+  font-family: $contentFonts !important;
+  font-size: 14px !important;
   -webkit-print-color-adjust: exact;
 }
 
@@ -77,12 +104,13 @@ table {
   .unit-title {
     font-size: 22px;
     font-weight: normal;
+    font-family: $titleFonts !important;
   }
 }
 
 // Nom de l'unité
 .name__head {
-  background-color: #d2d2d2;
+  background-color: $thgrey;
   font-weight: bold;
   border-bottom: 1px solid #000;
 
@@ -115,7 +143,7 @@ table {
 // Weapon de l'unité
 
 .weapon__head {
-  background-color: gainsboro !important;
+  background-color: $thgrey !important;
   font-weight: bold;
   border-bottom: 1px solid #000;
 
@@ -142,7 +170,7 @@ table {
 }
 
 .weapon__content_grey {
-  background-color: #f0eeee !important;
+  background-color: $linegrey !important;
 }
 
 // Contenu
@@ -150,6 +178,7 @@ table {
   overflow: hidden;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
+  background-color: $contentgrey;
 
   td:first-child {
     width: 16%;
@@ -172,11 +201,56 @@ table {
 
 // Footer
 .footer {
+  background-color: $contentgrey;
+  border-radius: 0 0 10px 10px;
 
   td:first-child {
     font-weight: bold;
     padding: 5px 10px;
     width: 16%;
     text-transform: uppercase;
+  }
+}
+
+// Tank
+.tank {
+  width: 95%;
+  position: relative;
+
+  span {
+    color: red;
+  }
+
+  .tank__damage {
+    position: absolute;
+    width: 250px;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 0 0 10px 10px;
+    right: -48px;
+    top: -3px;
+
+    .tank__damage_caption {
+      padding: 5px 10px 0 10px;
+      font-size: 12px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .tank__damage_table {
+      text-align: center;
+
+      tr:first-child {
+        border-top:1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: $thgrey;
+
+        th:first-child {
+          width: 44%;
+        }
+      }
+    }
   }
 }
