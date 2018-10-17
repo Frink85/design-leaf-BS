@@ -1,0 +1,419 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Test de la fonction apply-templates</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <!-- CDN bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Unité sans profil dégressif : Exemple avec un commissaire Psyker -->
+    <div class="row main">
+        <div class='wrapper'>
+            <table class="header">
+                <thead class="header__title">
+                <tr>
+                    <th class="icon-role">
+                        <div class="octogone">
+                            <img src="../img/hq.png" width="43" height="36" alt="QG" />
+                        </div>
+                    </th>
+                    <th class="icon-power">
+                        <div class="octogone">
+                            <p><span>20</span><br />power</p>
+                        </div>
+                    </th>
+
+                    <th class="unit-title">Commissar Yarrick</th>
+                </tr>
+                </thead>
+            </table>
+
+            <table class="name">
+                <tr class="name__head">
+                    <td>Unit</td>
+                    <td>M</td>
+                    <td>WS</td>
+                    <td>BS</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>W</td>
+                    <td>A</td>
+                    <td>Ld</td>
+                    <td>Save</td>
+                </tr>
+                <tr class="name__content">
+                    <td>Commissar Yarrick</td>
+                    <td>6"</td>
+                    <td>2+</td>
+                    <td>2+</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>3+</td>
+                </tr>
+            </table>
+
+            <table class="weapon">
+                <tr class="weapon__head">
+                    <td>Weapon</td>
+                    <td>Range</td>
+                    <td>Type</td>
+                    <td>S</td>
+                    <td>AP</td>
+                    <td>D</td>
+                    <td>Abilities</td>
+                </tr>
+                <tr class="weapon__content">
+                    <td>Bale Eye</td>
+                    <td>6"</td>
+                    <td>Pistol 1</td>
+                    <td>3</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+
+                <tr class="weapon__content weapon__content_grey">
+                    <td>Bolt pistol</td>
+                    <td>12"</td>
+                    <td>Pistol 1</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-</td>
+                </tr>
+
+                <tr class="weapon__content">
+                    <td>Power Klaw</td>
+                    <td>-</td>
+                    <td>Melee</td>
+                    <td>x2</td>
+                    <td>-3</td>
+                    <td>D3</td>
+                    <td>When attacking with this weapon, you must subtract 1 from the hit roll.</td>
+                </tr>
+
+                <tr class="weapon__content weapon__content_grey">
+                    <td>Storm bolter</td>
+                    <td>24"</td>
+                    <td>Rapid Fire 2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-</td>
+                </tr>
+            </table>
+
+            <table class="content">
+                <tr>
+                    <td colspan="1">ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td colspan="8">
+                        <ul>
+                            <li><b>Aura of Discipline : </b>Any friendly ASTRA MILITARUM units within 6" of a
+                                COMMISSAR can use his
+                                Leadership instead of their own.
+                            </li>
+                            <li><b>Hero of Hades Hive : </b>You can re-roll hit rolls of 1 made for friendly ASTRA
+                                MILITARUM units
+                                within 6" of Commissar Yarrick. You may re-roll and
+                                failed hit rolls for friendly ASTRA MILITARUM units within 6" of Commissar Yarrick
+                                when attacking ORK
+                                units.
+                            </li>
+                            <li><b>Iron Will : </b>Roll a D6 each time Commissar Yarrick loses his final wound; on a
+                                roll of 3+ that
+                                wound is not lost.
+                            </li>
+                            <li><b>Power Field : </b>Commisar Yarrick has a 4+ invulnerable save.
+                            </li>
+                            <li><b>Summary Execution : </b>The first time an Astra Militarum unit fails a Morale
+                                test during the
+                                Morale phase whilst it is within 6" of any friendly
+                                Commissars, you can execute a model. If you do, one model of your choice in that
+                                unit is slain and the
+                                Morale test is re-
+                                rolled (do not include this slain model when re-rolling the Morale test).
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="psyker">
+                <tbody>
+                <tr>
+                    <td colspan="1">PSYKER</td>
+                    <td colspan="8">Cast : <b>1</b> / Deny :
+                        <b>1</b> / Power Known :
+                        <b>Smite + 1 Hive Mind</b></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="footer">
+                <tr>
+                    <td colspan="1">KEYWORDS</td>
+                    <td colspan="8">HQ, Officio Prefectus, Astra Militarum, Character, Commissar, Infantry, Imperium, Yarrik
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Unité avec profil dégressif : exemple avec un Leman Russ -->
+    <div class="row main">
+        <div class="wrapper__tank">
+            <div class="row tank__header">
+                <div class="col-9">
+                    <div class="tank__name">
+                        <table class="header">
+                            <thead class="header__title">
+                            <tr>
+                                <th class="icon-role">
+                                    <div class="octogone">
+                                        <img src="../img/Heavy-Support.png" width="43" height="36" alt="QG" />
+                                    </div>
+                                </th>
+                                <th class="icon-power">
+                                    <div class="octogone">
+                                        <p><span>20</span><br />power</p>
+                                    </div>
+                                </th>
+                                <th class="unit-title">Leman Russ Battle Tanks</th>
+                            </tr>
+                            </thead>
+                        </table>
+                        <table class="name">
+                            <tr class="name__head">
+                                <td>Unit</td>
+                                <td>M</td>
+                                <td>WS</td>
+                                <td>BS</td>
+                                <td>S</td>
+                                <td>T</td>
+                                <td>W</td>
+                                <td>A</td>
+                                <td>Ld</td>
+                                <td>Save</td>
+                            </tr>
+                            <tr class="name__content">
+                                <td>Leman Russ</td>
+                                <td><span>*</span></td>
+                                <td>6+</td>
+                                <td><span>*</span></td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td><span>*</span></td>
+                                <td>7</td>
+                                <td>2+</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-3 no-padding-left">
+                    <div class="tank__damage">
+                        <p class="tank__damage_caption">
+                            <span>DAMAGE</span><br/>
+                            Some of this model's characteristics change as it suffer damage, as shown below:
+                        </p>
+                        <table class="tank__damage_table">
+                            <tbody>
+                            <tr>
+                                <th>Remaining W</th>
+                                <th>M</th>
+                                <th>BS</th>
+                                <th>A</th>
+                            </tr>
+                            <tr>
+                                <td>6-12+</td>
+                                <td>10"</td>
+                                <td>4+</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3-5</td>
+                                <td>7"</td>
+                                <td>5+</td>
+                                <td>D3</td>
+                            </tr>
+                            <tr>
+                                <td>1-2</td>
+                                <td>4"</td>
+                                <td>6+</td>
+                                <td>1</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__tank_content">
+                <table class="weapon">
+                    <tr class="weapon__head">
+                        <td>Weapon</td>
+                        <td>Range</td>
+                        <td>Type</td>
+                        <td>S</td>
+                        <td>AP</td>
+                        <td>D</td>
+                        <td>Abilities</td>
+                    </tr>
+                    <tr class="weapon__content">
+                        <td>Battle Cannon</td>
+                        <td>72"</td>
+                        <td>Heavy D6</td>
+                        <td>8</td>
+                        <td>-2</td>
+                        <td>D3</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="weapon__content weapon__content_grey">
+                        <td>Heavy bolter</td>
+                        <td>36"</td>
+                        <td>Heavy 3</td>
+                        <td>5</td>
+                        <td>-1</td>
+                        <td>1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="weapon__content">
+                        <td>Heavy stubber</td>
+                        <td>36"</td>
+                        <td>Heavy 3</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="weapon__content weapon__content_grey">
+                        <td>Hunter-killer missile</td>
+                        <td>48"</td>
+                        <td>Heavy 1</td>
+                        <td>8</td>
+                        <td>-2</td>
+                        <td>D6</td>
+                        <td>A model can only fire each of its hunter killer
+                            missiles once per battle.
+                        </td>
+                    </tr>
+                    <tr class="weapon__content">
+                        <td>Punisher Gatling Cannon</td>
+                        <td>24"</td>
+                        <td>Heavy 20</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="weapon__content weapon__content_grey">
+                        <td>Storm bolter</td>
+                        <td>24"</td>
+                        <td>Rapid Fire 2</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+                <table class="content">
+                    <tr>
+                        <td>ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <ul>
+                                <li><b>Augur array : </b>Once per battle, in the Shooting phase, you can
+                                    re-roll a single failed hit roll for a vehicle with
+                                    an augur array.
+                                </li>
+                                <li><b>Dozer blade : </b>If a vehicle with a dozer blade charges in the
+                                    Charge phase, add 1 to all hit rolls made for it
+                                    until the end of the ensuing Fight phase.
+                                </li>
+                                <li><b>Emergency Plasma Vents : </b>If this model fires a supercharged plasma cannon,
+                                    and you roll one or more hit rolls of 1, it is not
+                                    automatically destroyed. Instead, for each hit roll
+                                    of 1, the bearer suffers 1 mortal wound after all of
+                                    this weapon's shots have been resolved.
+                                </li>
+                                <li><b>Explodes (6+/6"/D3) : </b>If this model is reduced to 0 wounds, roll a D6
+                                    before removing it from the battlefield and before
+                                    any embarked models disembark. On a 6 it explodes,
+                                    and each unit within 6" suffers D3 mortal
+                                    wounds.
+                                </li>
+                                <li><b>Grinding Advance : </b>If this model remains stationary or moves under half
+                                    speed in its Movement phase (i.e. it moves a
+                                    distance in inches less than half of its current
+                                    Move characteristic) it can shoot its turret weapon
+                                    twice in the following Shooting phase (the turret
+                                    weapon must target the same unit both times).
+                                    Furthermore, hit rolls for this model&#8217;s turret
+                                    weapon do not suffer the penalty for moving and
+                                    shooting a Heavy weapon. The following weapons are
+                                    turret weapons: battle cannon, Conqueror battle
+                                    cannon, Demolisher cannon, Eradicator nova cannon,
+                                    Executioner plasma cannon, Exterminator autocannon,
+                                    Punisher gatling cannon, Stygies Vanquisher battle
+                                    cannon, twin lascannon and Vanquisher battle
+                                    cannon.
+                                </li>
+                                <li><b>Smoke Launchers : </b>Once per game, instead of shooting any weapons in
+                                    the Shooting phase, the vehicle can use its Smoke
+                                    Launchers; until your next Shooting phase your
+                                    opponent must subtract 1 from all hit rolls for
+                                    ranged weapons that target this vehicle.
+                                </li>
+                                <li><b>Track guards : </b>A vehicle with track guards always counts as having
+                                    its starting number of Wounds when determining its
+                                    Move characteristic (i.e., its Move characteristic
+                                    does not decrease as it suffers wounds).
+                                </li>
+                                <li><b>Vehicle Squadron : </b>The first time this unit is set up, all models in
+                                    this unit must be placed within 6" of each other.
+                                    From that point onwards, each operates independently
+                                    and is treated as a separate unit for all rules
+                                    purposes.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table class="psyker">
+                    <tbody>
+                    <tr>
+                        <td colspan="1">PSYKER</td>
+                        <td colspan="8">Cast : <b>1</b> / Deny :
+                            <b>1</b> / Power Known :
+                            <b>Smite + 1 Hive Mind</b></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="footer">
+                    <tr>
+                        <td colspan="1">KEYWORDS</td>
+                        <td colspan="8">(REGIMENT), Astra Militarum, Heavy
+                            Support, Imperium, Leman Russ, Leman Russ Battle Tank,
+                            Vehicle
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
