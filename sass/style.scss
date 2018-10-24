@@ -155,7 +155,7 @@ table {
 
   td:first-child {
     padding: 5px 10px;
-    width: 10.65%;
+    width: 6.7%;
     text-transform: uppercase;
   }
 }
@@ -246,6 +246,21 @@ table {
   }
 }
 
+// Psyker
+.psyker {
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background-color: $contentgrey;
+
+  td:first-child {
+    width: 16%;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 10px 10px;
+    text-transform: uppercase;
+  }
+}
+
 // Footer
 .footer {
   background-color: $contentgrey;
@@ -284,8 +299,8 @@ table {
     height: 170px;
 
     .tank__damage_caption {
-      padding: 2px 10px 0 10px;
-      font-size: 12px;
+      padding: 5px 10px;
+      font-size: 13px;
       margin-bottom: 2px;
       text-align: left;
 
@@ -296,6 +311,7 @@ table {
 
     .tank__damage_table {
       text-align: center;
+      font-size: 13px;
 
       tr:first-child {
         border-top:1px solid #000;

@@ -1,0 +1,192 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Test de la fonction apply-templates</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+    <!-- CDN bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Unité sans profil dégressif : Exemple avec un commissaire Psyker -->
+    <div class="row main">
+        <div class='wrapper'>
+            <!-- Start : _header.html -->
+            <table class="header">
+                <thead class="header__title">
+                <tr>
+                    <th class="icon-role">
+                        <div class="octogone">
+                            <img src="../img/hq.png" width="43" height="36" alt="QG" />
+                        </div>
+                    </th>
+                    <th class="icon-power">
+                        <div class="octogone">
+                            <p><span>20</span><br />power</p>
+                        </div>
+                    </th>
+
+                    <th class="unit-title">Commissar Yarrick</th>
+                </tr>
+                </thead>
+            </table>
+            <!-- End   : _header.html -->
+
+            <!-- Start : _name.html -->
+            <table class="name">
+                <tr class="name__head">
+                    <td>Unit</td>
+                    <td>M</td>
+                    <td>WS</td>
+                    <td>BS</td>
+                    <td>S</td>
+                    <td>T</td>
+                    <td>W</td>
+                    <td>A</td>
+                    <td>Ld</td>
+                    <td>Save</td>
+                </tr>
+                <tr class="name__content">
+                    <td>Commissar Yarrick</td>
+                    <td>6"</td>
+                    <td>2+</td>
+                    <td>2+</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>3+</td>
+                </tr>
+            </table>
+            <!-- End   : _name.html -->
+
+            <!-- Start : _weapon.html -->
+            <table class="weapon">
+                <tr class="weapon__head">
+                    <td>Weapon</td>
+                    <td>Range</td>
+                    <td>Type</td>
+                    <td>S</td>
+                    <td>AP</td>
+                    <td>D</td>
+                    <td>Abilities</td>
+                </tr>
+                <tr class="weapon__content">
+                    <td>Bale Eye</td>
+                    <td>6"</td>
+                    <td>Pistol 1</td>
+                    <td>3</td>
+                    <td>-2</td>
+                    <td>1</td>
+                    <td></td>
+                </tr>
+
+                <tr class="weapon__content weapon__content_grey">
+                    <td>Bolt pistol</td>
+                    <td>12"</td>
+                    <td>Pistol 1</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-</td>
+                </tr>
+
+                <tr class="weapon__content">
+                    <td>Power Klaw</td>
+                    <td>-</td>
+                    <td>Melee</td>
+                    <td>x2</td>
+                    <td>-3</td>
+                    <td>D3</td>
+                    <td>When attacking with this weapon, you must subtract 1 from the hit roll.</td>
+                </tr>
+
+                <tr class="weapon__content weapon__content_grey">
+                    <td>Storm bolter</td>
+                    <td>24"</td>
+                    <td>Rapid Fire 2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <!-- End   : _weapon.html -->
+
+            <!-- Start : _content.html -->
+            <table class="content">
+                <tr>
+                    <td colspan="1">ABILITIES&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td colspan="8">
+                        <ul>
+                            <li><b>Aura of Discipline : </b>Any friendly ASTRA MILITARUM units within 6" of a
+                                COMMISSAR can use his
+                                Leadership instead of their own.
+                            </li>
+                            <li><b>Hero of Hades Hive : </b>You can re-roll hit rolls of 1 made for friendly ASTRA
+                                MILITARUM units
+                                within 6" of Commissar Yarrick. You may re-roll and
+                                failed hit rolls for friendly ASTRA MILITARUM units within 6" of Commissar Yarrick
+                                when attacking ORK
+                                units.
+                            </li>
+                            <li><b>Iron Will : </b>Roll a D6 each time Commissar Yarrick loses his Endal wound; on a
+                                roll of 3+ that
+                                wound is not lost.
+                            </li>
+                            <li><b>Power Field : </b>Commisar Yarrick has a 4+ invulnerable save.
+                            </li>
+                            <li><b>Summary Execution : </b>The first time an Astra Militarum unit fails a Morale
+                                test during the
+                                Morale phase whilst it is within 6" of any friendly
+                                Commissars, you can execute a model. If you do, one model of your choice in that
+                                unit is slain and the
+                                Morale test is re-
+                                rolled (do not include this slain model when re-rolling the Morale test).
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <!-- End   : _content.html -->
+
+            <!-- Start : _psyker.html -->
+            <table class="psyker">
+                <tbody>
+                <tr>
+                    <td colspan="1">PSYKER</td>
+                    <td colspan="8">Cast : <b>1</b> / Deny :
+                        <b>1</b> / Power Known :
+                        <b>Smite + 1 Hive Mind</b></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- End   : _psyker.html -->
+
+            <!-- Start : _footer.html -->
+            <table class="footer">
+                <tr>
+                    <td colspan="1">KEYWORDS</td>
+                    <td colspan="8">HQ, Officio Prefectus, Astra Militarum, Character, Commissar, Infantry, Imperium, Yarrik
+                    </td>
+                </tr>
+            </table>
+            <!-- End   : _footer.html -->
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
