@@ -290,7 +290,11 @@ table {
 
   .tank__name {
     border: 3px solid #000;
-    height: 170px;
+    height: 174px;
+
+    .name__head td:first-child {
+      width: auto;
+    }
   }
 
   .tank__damage {
