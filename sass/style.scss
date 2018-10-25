@@ -244,6 +244,11 @@ table {
   li:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  li p {
+    text-align: left;
+    font-weight: normal;
+  }
 }
 
 // Psyker
