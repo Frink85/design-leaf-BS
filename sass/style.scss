@@ -248,6 +248,10 @@ table {
   li p {
     text-align: left;
     font-weight: normal;
+
+    span.bold {
+      color: black;
+    }
   }
 }
 
@@ -298,7 +302,7 @@ table {
     height: 174px;
 
     .name__head td:first-child {
-      width: auto;
+      width: 10%;
     }
   }
 
