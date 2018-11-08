@@ -68,3 +68,6 @@ typings/
 
 # Ignore les fichiers mac
 .DS_Store
+
+# ignore le fichier result.html
+design-leaf-BS/result.html
