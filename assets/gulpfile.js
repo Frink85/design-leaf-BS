@@ -17,7 +17,7 @@ gulp.task('css', function() {
             css: './css/'
         }))
         .pipe(minifyCSS())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('../design-leaf-BS/css'));
 });
 
 // Watch sur le JS et le CSS
